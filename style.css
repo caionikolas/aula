@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #222;
+    min-height: 200vh;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+section .side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .side#side1{
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+section .side#side2{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%);
+}
+section .side video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    color: #fff;
+    padding: 50px;
+    margin-top: 120vh;
+}
+
+.content h1 img{
+    height: 15rem;
+}
+
+.content h2{
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.content p{
+    font-size: 1.2rem;
+    padding: 1rem;
+    
+}
+
+.content p img{
+    padding-top: 2rem;
+    height: 200px;
+    width: 800px;
+}
+
+.content a{
+    color: #fff;
+    margin-left: 300px;
+}
+
+a{
+    background: linear-gradient(45deg, #F2CA80,#D96E30,#BF3326);
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+a:hover{
+    letter-spacing: .25rem;
+}
+
+
+
+/* ==================== secundaria 1 ========================*/
+.sec1{
+    min-height: 100vh;
+    background: linear-gradient(45deg, #F2CA80,#D96E30,#BF3326);
+}
+
+.sec1 h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sec1 h2{
+    padding-top: 5rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.sec1 p{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.main1{
+    background-image: url(img/card.jpg);
+    background-size: 80px;
+    background-repeat: repeat-x;
+}
+
+
+.main2{
+    background-image: url(img/card.jpg);
+    background-size: 80px;
+    background-repeat: repeat-y;
+}
+
+
+main3{
+    background-image: url(img/card.jpg);
+    background-size: 80px;
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+main4{
+    background-image: url(img/card.jpg);
+    background-size: 80px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.content1{
+    padding: 8.7rem 7rem;
+    font-weight: bold;
+}
+
+.cardtype li{
+    list-style: none;
+    display: flex;
+    align-items: top;
+    padding: .5rem;
+    gap: 20px;
+}
+
+.cardtype img{
+    width: 100px;
+    cursor: pointer;
+}
+
+.cardtype img:hover{
+    scale: 3;
+    z-index: 3;
+    transition: .5s;
+}
+
+.cardtype p{
+    position: relative;
+    top: 15px;
+}
+
+.cardtype p span{
+    font-style: italic;
+}
+
+.cores dl{
+    padding-left: 3rem;
+}
+
+.cores dl dd{
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+}
+
+.cores dl dt{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cores dl dt img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+.conto{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.conto img{
+    height: 600px;
+}
+
+/* ==================== secundaria 2 ========================*/
+.sec2 section{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+.content2{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+
+.content2 .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content2 .textBox h2{
+    color: #000;
+    font-size: 4rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+
+.content2 .textBox p{
+    color: #000;
+    margin-top: 45px;
+}
+
+.content2 .imgBox{
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content2 .imgBox img{
+    position: relative;
+    left: 350px;
+    bottom: 50px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .5s;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    z-index: 5;
+}
+
+.thumb li .active{
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.thumb li img{
+    max-width: 50px;
+}
+
+.sec2 a{
+    position: relative;
+    bottom: 64px;
+    margin-left: 50px;
+}
+
